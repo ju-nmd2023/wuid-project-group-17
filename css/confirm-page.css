@@ -2,6 +2,7 @@
 .desktop-confirm-order * {
   box-sizing: border-box;
 }
+
 .desktop-confirm-order {
   background: #ffffff;
   width: 1440px;
@@ -711,8 +712,11 @@ p{
   height: auto;
 }
 
+
+/* code twice? */
 .desktop-confirm-order,
-.desktop-confirm-order * {
+.desktop-confirm-order 
+* {
   box-sizing: border-box;
 }
 .desktop-confirm-order {

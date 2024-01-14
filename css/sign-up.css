@@ -17,6 +17,7 @@
   top: 0px;
 }
 .group-16 {
+  /* what's this? */
   position: absolute;
   inset: 0;
 }
@@ -24,6 +25,8 @@
   width: 440px;
   height: 64px;
   position: static;
+  /* the element uses the default positioning behavior.
+  It won’t be affected by other positioning properties like relative, absolute, fixed, etc. */
 }
 .rectangle-socialmedia {
   border-radius: 10px;
@@ -40,6 +43,9 @@
 }
 .bottom-selection {
   position: absolute;
+  /*  means that the element's position will be relative to its closest positioned ancestor. 
+  If there is no positioned ancestor, it will be positioned relative to the document's root element, 
+  usually the <html> element. */
   inset: 0;
 }
 .upper-selection {
@@ -98,6 +104,7 @@
   position: absolute;
 }
 
+/* twice? */
 .desktop-sign-up,
 .desktop-sign-up * {
   box-sizing: border-box;
@@ -243,6 +250,7 @@
   top: 42.93%;
   height: 0%;
 }
+/* would be better if it's a from */
 .password {
   color: #121212;
   text-align: left;
