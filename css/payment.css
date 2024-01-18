@@ -317,6 +317,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-top: 2rem;
 }
 .confirm-btn {
   color: #000;
@@ -500,6 +501,9 @@ footer {
  }
  .cancel-confirm-btn{
   margin-left: 6rem;
+ }
+ .cancel-btn{
+  margin-top: 1rem;
  }
  .confirm-btn{
   margin-left: -16rem;
