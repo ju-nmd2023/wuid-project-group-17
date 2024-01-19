@@ -58,51 +58,27 @@ a {
   margin-right: 4.38rem;
 }
 
-.sign-up-button-link{
+.sign-up-button-link {
   margin-left: 0;
 }
 
-.log-in-button-link{
+.log-in-button-link {
   margin-left: 0;
 }
 
 @media screen and (max-width: 700px) {
   header {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .logo-icon-img {
-    margin-left: 0;
-    align-items: start;
-    width: 9rem;
-    height: 9rem;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-
-  ul {
-    flex-direction: column;
-    margin-left: -3rem;
-    padding-left: 0;
-    margin-bottom: 0.3rem;
-  }
-
-  .header-ul {
-    margin-top: -1.5rem;
-  }
-
-  li {
-    align-items: start;
-    text-align: left;
-    margin-bottom: 0.8rem;
+    display: none;
   }
 
   /* BUTTON */
   .sign-up-button,
   .log-in-button {
-    margin-left: 2.5rem;
-    margin-bottom: 1rem;
+    display: none;
+  }
+
+  h1 {
+    margin-top: 5rem;
   }
 }
 
@@ -114,15 +90,16 @@ a {
   }
 
   .header-ul {
-    margin-left: -1rem;
+    margin-left: 5rem;
   }
 
   .menu {
     margin: 1rem;
   }
 
-  .sign-up-button {
-    margin-left: 3rem;
+  .sign-up-button,
+  .log-in-button {
+    display: none;
   }
 }
 
@@ -154,7 +131,7 @@ a {
   }
 
   .header-ul {
-    margin-left: 5rem;
+    margin-left: 7rem;
   }
 
   .menu {
@@ -162,7 +139,7 @@ a {
   }
 
   .sign-up-button {
-    margin-left: 10rem;
+    margin-left: 7rem;
   }
 
   form {
@@ -578,7 +555,8 @@ a {
 
 /* PAYMENT SETTING */
 /* payment box layout and icons setting */
-.payment-container1,.payment-container2 {
+.payment-container1,
+.payment-container2 {
   display: flex;
   border-radius: 0.625rem;
   background: #ececec;
@@ -587,7 +565,7 @@ a {
   margin-left: 14rem;
   margin-bottom: 3rem;
   margin-top: 0;
-  border: 2px solid #ececec ;
+  border: 2px solid #ececec;
 }
 
 .payment-icon {
@@ -651,50 +629,44 @@ a {
   margin-top: 0.25rem;
 }
 
-
-@media screen and (max-width: 500px) {
-  .txt-payment-headline {
-    font-size: 1.2rem;
-    margin-left: 5.4rem;
+@media screen and (max-width: 700px) {
+  /* confirm and payment*/
+  .order-container {
+    margin-left: 4rem;
+    gap: 3rem;
   }
-
-  .payment-container {
-    width: 318px;
-    height: 100px;
-    margin-left: 4.6rem;
-  }
-
-  .payment-icon {
-    width: 3.8rem;
-    height: 3.8rem;
-    margin-left: 1.7rem;
-    margin-top: 1.3rem;
-  }
-
-  .payment-icon2 {
-    width: 3.2rem;
-    height: 3.1rem;
+  .method-container {
     margin-left: 2rem;
-    margin-top: 1.7rem;
+    gap: 0rem;
   }
-
+  .method-img-container {
+    margin-left: 4rem;
+    gap: 0rem;
+  }
+  .txt-payment-headline {
+    margin-left: 3rem;
+  }
+  .payment-container1,
+  .payment-container2 {
+    margin-left: 3rem;
+    max-width: 80%;
+  }
   .card-number {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-left: 1.8rem;
-    margin-top: 2.7rem;
+    font-size: 25px;
+    margin-right: -12rem;
+    margin-left: 1.2rem;
   }
-
   .txt-verified {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
+    font-size: 28px;
+    margin-left: 13rem;
+  }
+  .visa-icon,
+  .mc-icon {
+    margin-left: 0.5rem;
   }
 
   .add-payment-container {
-    display: flex;
-    margin-left: 6rem;
+    margin-left: 5rem;
   }
 
   .add-payment-button {
@@ -703,167 +675,128 @@ a {
   }
 
   .txt-add-payment {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    margin-left: 1rem;
-    margin-top: 0.2rem;
+    margin-left: 1.5rem;
+    margin-top: 0;
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 729px) {
+@media screen and (min-width: 701px) and (max-width: 950px) {
+  /* confirm and payment*/
+  .order-container {
+    margin-left: 4rem;
+    gap: 4rem;
+  }
+  .method-container {
+    margin-left: 10rem;
+    gap: 1rem;
+  }
+  .method-img-container {
+    margin-left: 9rem;
+  }
   .txt-payment-headline {
-    font-size: 1.5rem;
-    margin-left: 6.5rem;
-  }
-
-  .payment-container {
-    width: 425px;
-    height: 130px;
-    margin-left: 6.5rem;
-  }
-
-  .payment-icon {
-    width: 5.4375rem;
-    height: 5.4375rem;
-    margin-left: 2.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .payment-icon2 {
-    width: 4.4rem;
-    height: 3.7rem;
-    margin-left: 3.1rem;
-    margin-top: 2.3rem;
-  }
-
-  .card-number {
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-left: 2.6rem;
-    margin-top: 3.5rem;
-  }
-
-  .txt-verified {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-top: 3.4rem;
-    margin-left: 2.2rem;
-  }
-
-  .add-payment-container {
-    display: flex;
     margin-left: 6rem;
   }
-
-  .add-payment-button {
-    width: 2rem;
-    height: 2rem;
+  .payment-container1,
+  .payment-container2 {
+    margin-left: 6rem;
+    max-width: 80%;
   }
-
-  .txt-add-payment {
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-left: 1.8rem;
-  }
-}
-
-@media screen and (min-width: 730px) and (max-width: 949px) {
-  .txt-payment-headline {
-    font-size: 2rem;
-    margin-left: 7rem;
-  }
-
-  .payment-container {
-    width: 600px;
-    margin-left: 8.5rem;
-  }
-  .payment-icon {
-    width: 5.4375rem;
-    height: 5.4375rem;
-    margin-left: 3rem;
-    margin-top: 2rem;
-  }
-
-  .payment-icon2 {
-    width: 4.8125rem;
-    height: 4.0625rem;
-    margin-left: 3.5rem;
-    margin-top: 3.3rem;
-  }
-
   .card-number {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-left: 4.6rem;
-    margin-top: 4rem;
+    font-size: 30px;
+    margin-right: -11rem;
+    margin-left: 4rem;
   }
-
   .txt-verified {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 3.8rem;
-    margin-left: 7.5rem;
+    font-size: 30px;
+  }
+  .visa-icon,
+  .mc-icon {
+    margin-left: 3rem;
   }
 
   .add-payment-container {
-    display: flex;
-    margin-left: 7rem;
-  }
-
-  .add-payment-button {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .txt-add-payment {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-left: 1.8rem;
-  }
-}
-
-@media screen and (min-width: 950px) and (max-width: 1200px) {
-  .payment-container {
-    width: 700px;
-    margin-left: 13rem;
-  }
-  .payment-icon {
-    width: 6.4375rem;
-    height: 6.4375rem;
-    margin-left: 4rem;
-    margin-top: 1.5rem;
-  }
-
-  .payment-icon2 {
-    width: 5.8125rem;
-    height: 5.0625rem;
-    margin-left: 4rem;
-    margin-top: 2.3rem;
-  }
-
-  .card-number {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-left: 7rem;
-    margin-top: 3.8rem;
-  }
-
-  .txt-verified {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 3.8rem;
     margin-left: 8rem;
   }
 
   .add-payment-button {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
   .txt-add-payment {
     font-size: 1.5rem;
     font-weight: 400;
-    margin-left: 1.8rem;
+    margin-left: 1.2rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1100px) {
+  /* confirm and payment*/
+  .order-container {
+    margin-left: 8rem;
+    gap: 6rem;
+  }
+  .method-container {
+    margin-left: 14rem;
+    gap: 1rem;
+  }
+  .method-img-container {
+    margin-left: 13rem;
+  }
+  .txt-payment-headline {
+    margin-left: 8rem;
+  }
+  .payment-container1,
+  .payment-container2 {
+    margin-left: 8rem;
+    max-width: 80%;
+  }
+  .card-number {
+    font-size: 30px;
+    margin-right: -10rem;
+  }
+  .visa-icon,
+  .mc-icon {
+    margin-left: 4rem;
+  }
+
+  .add-payment-container {
+    margin-left: 10rem;
+  }
+
+  .add-payment-button {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .txt-add-payment {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1370px) {
+  /* confirm and payment*/
+  .order-container {
+    margin-left: 14rem;
+    gap: 5rem;
+  }
+  .method-container {
+    margin-left: 16rem;
+  }
+  .method-img-container {
+    margin-left: 21rem;
+  }
+  .txt-payment-headline {
+    margin-left: 10rem;
+  }
+  .payment-container1,
+  .payment-container2 {
+    margin-left: 10rem;
   }
 }
 
@@ -901,8 +834,8 @@ a {
   margin-left: 4.19rem;
 }
 
-.txt-change-payment-link{
-  margin-top: 0 ;
+.txt-change-payment-link {
+  margin-top: 0;
 }
 
 .Check-out-button {
@@ -920,90 +853,121 @@ a {
   border: none;
 }
 
-.Check-out-button-link{
+.Check-out-button-link {
   margin-left: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 469px) {
   .Check-out-bar-container {
-    width: 19.2rem;
-    height: 6.8rem;
-    margin-left: 5.1rem;
-    margin-top: 2rem;
-  }
-
-  .txt-Check-out-price {
-    font-size: 1.2rem;
-    margin-left: 2rem;
-    margin-top: 1.2rem;
-  }
-
-  .txt-change-payment {
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: -0.5rem;
-    margin-left: 1rem;
-  }
-
-  .Check-out-button {
-    width: 7rem;
-    height: 3.5rem;
-    font-size: 1rem;
-    margin-top: 1.2rem;
-    margin-right: 0rem;
-    margin-left: 1rem;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 729px) {
-  .Check-out-bar-container {
-    width: 26rem;
-    height: 6.8rem;
-    margin-left: 7rem;
+    width: 25rem;
+    height: 8rem;
+    margin-left: 4rem;
     margin-top: 2rem;
   }
 
   .txt-Check-out-price {
     font-size: 1.5rem;
-    margin-left: 2.5rem;
-    margin-top: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
   }
 
   .txt-change-payment {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    margin-top: -1rem;
-    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1.2rem;
   }
 
   .Check-out-button {
     width: 9rem;
     height: 3.5rem;
     font-size: 1.4rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-right: 2rem;
     margin-left: 2rem;
   }
 }
 
-@media screen and (min-width: 730px) and (max-width: 949px) {
+@media screen and (min-width: 470) and (max-width: 552px) {
   .Check-out-bar-container {
-    width: 36.9375rem;
+    width: 25rem;
+    height: 8rem;
+    margin-left: rem;
+    margin-top: 2rem;
+  }
+
+  .txt-Check-out-price {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
+  .txt-change-payment {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-left: 1.2rem;
+  }
+
+  .Check-out-button {
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 553px) and (max-width: 729px) {
+  .Check-out-bar-container {
+    width: 30rem;
+    height: 8rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+
+  .txt-Check-out-price {
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .txt-change-payment {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .Check-out-button {
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 799px) {
+  .Check-out-bar-container {
+    width: 36rem;
     height: 10.5rem;
-    margin-left: 9rem;
+    margin-left: 7rem;
   }
 
   .txt-Check-out-price {
     font-size: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 2.3rem;
     margin-top: 2.5rem;
   }
 
   .txt-change-payment {
     font-size: 1.2rem;
     font-weight: 500;
-    margin-top: -1rem;
-    margin-left: 1.2rem;
+    margin-top: 0rem;
+    margin-left: 2rem;
   }
 
   .Check-out-button {
@@ -1016,10 +980,41 @@ a {
   }
 }
 
-@media screen and (min-width: 950px) and (max-width: 1200px) {
+@media screen and (min-width: 800px) and (max-width: 949px) {
   .Check-out-bar-container {
-    width: 42.9375rem;
+    width: 45rem;
     height: 10.5rem;
+    margin-left: 7rem;
+  }
+
+  .txt-Check-out-price {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .txt-change-payment {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-left: -3rem;
+  }
+
+  .Check-out-button {
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-right: 3.4rem;
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+  .Check-out-bar-container {
+    width: 53rem;
+    height: 10.5rem;
+    margin-left: 9rem;
   }
 
   .txt-Check-out-price {
@@ -1031,8 +1026,8 @@ a {
   .txt-change-payment {
     font-size: 1.5rem;
     font-weight: 500;
-    margin-top: -1rem;
-    margin-left: 2.3rem;
+    margin-top: 0rem;
+    margin-left: -3rem;
   }
 
   .Check-out-button {
@@ -1042,6 +1037,12 @@ a {
     margin-top: 2.5rem;
     margin-right: 3.4rem;
     margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1366px) {
+  .Check-out-bar-container {
+    margin-left: 10.5rem;
   }
 }
 

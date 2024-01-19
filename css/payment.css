@@ -317,6 +317,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-top: 2rem;
 }
 .confirm-btn {
   color: #000;
@@ -402,6 +403,7 @@ footer {
   /* nav menu */
   header {
     flex-direction: column;
+    display: none;
     align-items: start;
   }
 
@@ -439,7 +441,7 @@ footer {
 
   /* confirm and payment*/
   .order-container{
-    margin-left: 4rem;
+    margin-left: -3rem;
     gap: 3rem;
   }
   .method-container{
@@ -500,6 +502,9 @@ footer {
  }
  .cancel-confirm-btn{
   margin-left: 6rem;
+ }
+ .cancel-btn{
+  margin-top: 1rem;
  }
  .confirm-btn{
   margin-left: -16rem;
