@@ -1076,9 +1076,9 @@ a {
   border: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 599px) {
   .Reorder-bar-container {
-    margin-left: -25rem;
+    margin-left: -30rem;
   }
 
   .reorder-button {
@@ -1094,25 +1094,49 @@ a {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 729px) {
+@media screen and (min-width: 600px) and (max-width: 729px) {
+  .Reorder-bar-container {
+    margin-left: -28rem;
+  }
+
+  .reorder-button {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 799px) {
   .Reorder-bar-container {
     margin-left: -25rem;
   }
 
-  .reorder-button {
-    margin-left: 12rem;
+  .reorder-button{
+    margin-left: 7rem;
   }
 }
 
-@media screen and (min-width: 730px) and (max-width: 949px) {
+@media screen and (min-width: 800px) and (max-width: 949px) {
+  .Reorder-bar-container {
+    margin-left: -25rem;
+  }
+
+  .reorder-button{
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 979px) {
   .Reorder-bar-container {
     margin-left: -20rem;
   }
 }
 
-@media screen and (min-width: 950px) and (max-width: 1200px) {
+@media screen and (min-width: 980px) and (max-width: 1200px) {
   .Reorder-bar-container {
-    margin-left: -10rem;
+    margin-left: -15rem;
+  }
+
+  .reorder-button{
+    margin-left: 10rem;
   }
 }
 
