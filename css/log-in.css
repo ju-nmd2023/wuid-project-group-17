@@ -1,283 +1,222 @@
-.background-login,
-.background-login * {
-  box-sizing: border-box;
+* {
+  font-family: "Inter", sans-serif;
 }
 
-.background-login {
-  width: 1440px;
-  height: 1024px;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box2 {
   position: relative;
-}
-.desktop-log-in {
-  background: #ffffff;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  overflow-y: auto;
-}
-
-.group-log-in {
-  opacity: 0;
-  /* 0？ */
-  position: absolute;
-  inset: 0;
-}
-
-.log-in {
-  color: #121212;
-  text-align: left;
-  font: 700 32px "Inter-Bold", sans-serif;
-  position: absolute;
-  left: 960px;
-  top: 207px;
-}
-.containing-block {
-  position: absolute;
-  inset: 0;
-}
-.group-position {
-  width: 440px;
-  height: 64px;
-  position: static;
-}
-.group-size {
-  width: 440px;
-  height: 64px;
-  position: static;
-}
-.rectangle-button-social-media {
-  background: #ffffff;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #0d374f;
-  border-width: 3px;
-  width: 440px;
-  height: 64px;
-  position: absolute;
-  left: 783px;
-  top: 611px;
-}
-.width-height-position {
-  width: 440px;
-  height: 133px;
-  position: static;
-}
-.rectangle-button-login1 {
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #0d374f;
-  border-width: 3px;
-  width: 440px;
-  height: 64px;
-  position: absolute;
-  left: 783px;
-  top: 698px;
-}
-.login-socmedia {
-  color: #000000;
-  text-align: center;
-  font: 500 20px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 856px;
-  top: 629px;
-  width: 294.41px;
-  height: 28.95px;
+  grid-column-start: 2;
+  grid-column-end: 4;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-items: center;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
-.log-in2 {
-  color: #000000;
+
+.box1 {
+  background-image: url("/assets/images/login-page.jpeg");
+  background-size: 135%;
+  margin-bottom: -120px;
+}
+
+.form-box {
+  margin-left: 2%;
+}
+
+.title {
+  align-self: center;
+  position: relative;
+  font: 700 2em "Inter Medium", sans-serif;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin-left: 2%;
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+form {
+  align-self: center;
+  max-width: 400px;
+}
+
+.form-item {
+  margin-bottom: 40px;
+  font: 550 1.25em "Inter-SemiBold", sans-serif;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-item input {
+  align-self: center;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+
+.form-item input[type="submit"] {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 7px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.save-container {
+  margin-top: -1.5rem;
+  display: flex;
+  width: 42.90025rem;
+  height: 2.35531rem;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 400;
+  gap: 11.5rem;
+}
+
+.save-container input[type="checkbox"] {
+  width: 2.09175rem;
+  height: 2.09175rem;
+  border-radius: 0.1875rem;
+  border: 1px solid #16507a;
+  background: none;
+  margin-top: 5px;
+  vertical-align: middle;
+}
+
+.forget-password {
+  color: #121212;
+  margin-top: 7.5px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 1rem;
+  color: #000;
   text-align: center;
-  font: 500 20px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 965px;
-  top: 716px;
-  width: 74px;
-  height: 28px;
-  z-index: 2;
-  text-decoration: none;
+  background-color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 0.625rem;
+  border: 5px solid #0d374f;
 }
-/* write the log in code twice? */
-.group-inset {
-  position: absolute;
-  inset: 0;
+
+.log-in-with-social-media {
+  margin-top: 5rem;
 }
-.no-account {
+
+.sign-up-container {
+  display: flex;
   color: #7d7d7d;
   text-align: center;
-  font: 400 16px "Inter-Regular", sans-serif;
-  position: absolute;
-  left: 875px;
-  top: 794px;
-  z-index: 2;
-}
-.trapple-position1 {
-  width: 63.5px;
-  height: 0px;
-  position: absolute;
-  left: 1092px;
-  top: 816px;
-  overflow: visible;
-  /* Indicates that the content of the element can overflow its box 
-  and will be displayed outside the container without being hidden or cropped */
+  font-size: 1rem;
+  font-weight: 400;
+  gap: 2rem;
+  margin-left: 7rem;
+  margin-top: -1rem;
 }
 
-.group-entire-viewport {
-  position: absolute;
-  inset: 0;
-}
-.trapple-picture-size {
-  width: 186px;
-  height: 34px;
-  position: static;
-}
-.name-e-mail {
-  color: #121212;
-  text-align: left;
-  font: 600 20px "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 783px;
-  top: 316px;
-  width: 186px;
-  height: 34px;
-}
-.document-flow {
-  width: 140px;
-  height: 34px;
-  position: static;
-}
-.password {
-  color: #121212;
-  text-align: left;
-  font: 600 20px "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 783px;
-  top: 413px;
-  width: 140px;
-  height: 34px;
-}
-.forgot-password {
-  color: #121212;
-  text-align: left;
-  font: 400 14px "Inter-Regular", sans-serif;
-  position: absolute;
-  left: 1091px;
-  top: 499px;
-  width: 165px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.trapple-scroll {
-  width: 115px;
-  height: 0px;
-  position: absolute;
-  left: 1089px;
-  top: 521px;
-  overflow: visible;
-}
-.remember-passwords {
-  color: #121212;
-  text-align: center;
-  font: 400 14px "Inter-Regular", sans-serif;
-  position: absolute;
-  left: 771px;
-  top: 499px;
-  width: 218px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rectangle-mini {
-  /* the box on the left side of remember password? */
-  background: #ffffff;
-  border-radius: 3px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 786px;
-  top: 504px;
+.sign-up-link {
+  color: #7d7d7d;
 }
 
-.line-login {
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px 0 0 0;
-  /* Upper left and right borders are 0 */
-  width: 413px;
-  height: 0px;
-  position: absolute;
-  left: 785px;
-  top: 380px;
-}
-.line-login1 {
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px 0 0 0;
-  width: 413px;
-  height: 0px;
-  position: absolute;
-  left: 785px;
-  top: 478px;
-}
-/* it would be better by using input/form */
+@media (max-width: 1074px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
 
-.width-height {
-  width: 440px;
-  height: 64px;
-  position: static;
-}
-.log-in-with-social-media2 {
-  color: #000000;
-  text-align: center;
-  font: 500 20px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 856px;
-  top: 629px;
-  width: 294px;
-  height: 29px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.trapple-size {
-  width: 63.5px;
-  height: 0px;
-  position: absolute;
-  left: 1092px;
-  top: 816px;
-  overflow: visible;
-}
-.trapple-position {
-  width: 115px;
-  height: 0px;
-  position: absolute;
-  left: 1089px;
-  top: 521px;
-  overflow: visible;
-}
-.img-boat {
-  width: 35rem;
-  height: 64rem;
-  flex-shrink: 0;
-  margin-top: -20rem;
-  margin-bottom: -60rem;
-}
-/* how you made the layout? */
+  .box1 {
+    background-image: url("/assets/images/login-page.jpeg");
+    filter: blur(5px);
+    background-size: 110%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
-/*Media Quaries*/
-@media (max-width: 1231px) {
-  .background-login {
-    font-size: 1.5rem;
+  .box2 {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    padding: 40px;
+    width: 100%;
+  }
+
+  .form-container {
+    margin-left: 0;
+  }
+
+  .form-item {
+    margin-bottom: 15px;
+  }
+
+  input {
+    color: black;
+    background-color: transparent;
+  }
+
+  label {
+    color: white;
+  }
+
+  .form-item input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+  }
+
+  .title {
+    color: white;
+  }
+
+  .save-container {
+    margin-top: 2rem;
+  }
+
+  .forget-password {
+    color: white;
+    font-weight: 700px;
+    margin-top: 0.5rem;
+  }
+
+  .sign-up-container {
+    color: white;
+    margin-top: 1.5rem;
+  }
+
+  .sign-up-link {
+    color: white;
   }
 }

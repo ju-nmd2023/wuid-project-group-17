@@ -6,6 +6,10 @@
     color: var(--color-black);
 }
 
+.menu{
+    color: #121212;
+    text-decoration: none;
+}
 
 .complete-text {
     display: flex;
@@ -186,6 +190,10 @@ h6{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.back-link{
+    text-decoration: none;
 }
 
 .back-to-main-wrapper{
