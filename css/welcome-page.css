@@ -192,10 +192,32 @@
 .copyright-2023-trapple-font-weight {
   color: #ffffff;
   font-family: "Inter-Bold", sans-serif;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
 /* Animation with 2 Keyframes */
+@keyframes expandText {
+  /* Didn't use this? */
+  0%,
+  100% {
+    transform: scale(1) translateX(0); /* Initial size and translation */
+  }
+  50% {
+    transform: scale(1.2) translateX(0); /* Expanded size and translation */
+    margin: 0 auto;
+  }
+}
+
+.plan-your-next-journey {
+  animation: slideinleft ease-in-out 3s normal; /* Adjust the duration */
+  /* ease-in-out：Control the speed of animation changes，
+  change slowly both at the beginning and at the end. */
+  margin: 0 auto;
+  /* 0: indicating zero margins on all sides
+  auto: ensuring the element is horizontally centered within its coverer. */
+}
+
 @keyframes slideinleft {
   0%,
   100% {
