@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <title>Sign up</title>
     <link rel="stylesheet" href="css/sign-up.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div class="desktop-sign-up">
-      <div class="picture-component">
-        <div class="background">
-          <div class="structure">
-            <div class="rectangle-socialmedia"></div>
+    <div class="container">
+      <!-- for picture -->
+      <div class="box1"></div>
+
+      <div class="box2">
+        <h1 class="title">SIGN UP</h1>
+
+        <!-- from -->
+        <form class="form-container">
+          <div class="form-item">
+            <label for="fname">Name</label>
+            <input class="input-info" type="text" />
           </div>
-        </div>
-        <div class="bottom-selection">
-          <div class="upper-selection">
-            <div class="structure">
-              <div class="rectangle-signup"></div>
-            </div>
+
+          <div class="form-item">
+            <label for="lname">Email</label>
+            <input class="input-info" type="text" />
           </div>
-        </div>
-        <div class="signup-socialmedia">Sign up with social media</div>
-        <div class="sign-up">SIGN UP</div>
-        <div class="group-51">
-          <div class="name">Name</div>
-        </div>
-        <div class="compnent-selection">
-          <div class="email">Email</div>
-        </div>
-        <div class="line-name"></div>
-        <div class="line-email"></div>
-        <div class="signup-group">
-          <div class="password">Password</div>
-        </div>
-        <div class="confirm-password">Confirm Password</div>
-        <div class="line-password"></div>
-        <div class="line-confirm"></div>
-        <a href="index.html" class="sign-up2">Sign up</a>
-        <div class="group-picture">
-          <img class="img-beach" src="./assets/images/sign-up-page.jpeg" />
-        </div>
+
+          <div class="form-item">
+            <label for="lname">Password</label>
+            <input class="input-info" type="password" />
+          </div>
+
+          <div class="form-item">
+            <label for="lname">Confirm Password</label>
+            <input class="input-info" type="password" />
+          </div>
+
+          <!-- button -->
+          <div class="form-item">
+            <button>Log in with social media</button>
+
+            <a href="index.html">
+              <button>Log in</button>
+            </a>
+          </div>
+        </form>
       </div>
     </div>
   </body>

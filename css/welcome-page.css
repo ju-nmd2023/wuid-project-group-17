@@ -5,70 +5,72 @@
   When set to border-box, the width and height values include padding and border sizes, 
   and the specific sizes will be kept even if padding and borders are added. */
 }
+
 .desktop-door {
-  /* the whole page? */
-  width: 1440px;
-  height: 1024px;
+  width: 100%;
+  height: 100vh; /* Using viewport height for full screen */
   position: relative;
   overflow-y: auto;
-  /* is used to control the vertical overflow behavior of an element in a webpage.
-  Automatically adds a vertical scrollbar if the content of an element is outside its defined height. */
 }
 
 .welcome-page {
-  /* what's this? same? */
-  width: 1440px;
-  height: 1024px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
+  background-size: cover;
 }
+
 .transparent-rectangle {
   background: rgba(217, 217, 217, 0);
-  width: 1440px;
-  height: 1024px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 0px;
-  top: 0px; /* screen rectangle for the picture background */
+  left: 0;
+  top: 0;
 }
+
 .welcome-page-inset {
   position: absolute;
   inset: 0;
 }
+
+/* Button */
 .button-get-started {
   background: #0d374f;
   border-radius: 30px;
   width: 258.78px;
   height: 56px;
   position: absolute;
-  left: 593px;
-  top: 640px;
-  /* The button element will be displayed 593 pixels off the left edge 
-  and 640 pixels off the top edge of its containing element on the page. */
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  margin-top: -7rem;
 }
 
 .get-started {
-  /* the text */
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 32px;
+  font-size: 1.8rem;
   font-weight: 700;
   position: absolute;
-  left: 623.56px;
-  top: 655.2px;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
   width: 198.62px;
   height: 25.6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: auto; /* Make sure pointer events are not disabled */
+  pointer-events: auto;
   cursor: pointer;
-  /* When the mouse hovers over the element, the mouse pointer will turn into a hand shape, 
-  suggesting that the element is clickable */
   z-index: 2;
   text-decoration: none;
+  margin-top: -7rem;
 }
+
 .welcome-page-inset2 {
   position: absolute;
   inset: 0;
@@ -79,22 +81,28 @@
   height: 26px;
   position: static;
 }
+
 .welcome-page-width-height {
   width: 191px;
   height: 22px;
   position: static;
 }
+
 .explore-without-log-in {
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 18px;
+  font-size: 2rem; /* Default size */
+  /* how to reduct the font size? */
   font-weight: 700;
   position: absolute;
-  left: 628px;
-  top: 740px;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
   text-decoration: underline;
+  margin-top: -6rem;
 }
+
 .trapple-scroll {
   /* what's this？ */
   width: 205.01px;
@@ -104,20 +112,23 @@
   top: 765px;
   overflow: visible; /* scroll for the website */
 }
+
 .plan-your-next-journey {
   color: #ffffff;
   text-align: center;
   position: absolute;
-  left: 300px;
-  top: 186px;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
   width: 841px;
   height: 234px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Permanent Marker", cursive;
-  /* cursive is a Backup options */
+  margin-top: 30px;
 }
+
 .plan-your {
   color: #ffffff;
   font-family: "Permanent Marker", cursive;
@@ -125,6 +136,7 @@
   line-height: 97px;
   font-weight: 400;
 }
+
 .plan-your-next-journey-span {
   color: #ffffff;
   font-size: 64px;
@@ -132,82 +144,58 @@
   font-weight: 400;
   font-family: "Permanent Marker", cursive;
 }
+
 .next-journey {
   color: #ffffff;
   font-size: 120px;
   line-height: 97px;
   font-weight: 400;
   font-family: "Permanent Marker", cursive;
+  margin-bottom: 0;
 }
+
 .where-every-adventure-begins {
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 30px;
+  font-size: 2rem; /* Default size */
   line-height: 98px;
   font-weight: 700;
   position: absolute;
-  left: 492px;
-  top: 502px;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
   transform-origin: 0 0;
-  /* defines the origin point for the transformations,
-  0 0 means that during transformations, 
-  the center point for the changes is at the top left corner of the element. */
-
-  transform: rotate(0deg) scale(1, 1);
-  /* element should not be rotated
-  the element should not be scaled; both the horizontal and vertical scaling
-  it maintains its original size. */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  margin-top: -5rem;
 }
+
 .copyright-2023-trapple-position {
   color: #ffffff;
   text-align: center;
+  font-family: "Inter-Bold", sans-serif;
   position: absolute;
-  left: 626px;
-  top: 982px;
-  display: flex;
   align-items: center;
   justify-content: center;
-}
-.copyright-2023-trapple-position {
-  color: #ffffff;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 14px;
+  font-size: 1.6rem;
   font-weight: 700;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  margin-top: 0rem;
+  font-size: 1rem;
 }
+
 .copyright-2023-trapple-font-weight {
   color: #ffffff;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 16px;
   font-weight: 700;
 }
 
 /* Animation with 2 Keyframes */
-
-@keyframes expandText {
-  /* Didn't use this? */
-  0%,
-  100% {
-    transform: scale(1) translateX(0); /* Initial size and translation */
-  }
-  50% {
-    transform: scale(1.2) translateX(0); /* Expanded size and translation */
-    margin: 0 auto;
-  }
-}
-
-.plan-your-next-journey {
-  animation: slideinleft ease-in-out 3s normal; /* Adjust the duration */
-  /* ease-in-out：Control the speed of animation changes，
-  change slowly both at the beginning and at the end. */
-  margin: 0 auto;
-  /* 0: indicating zero margins on all sides
-  auto: ensuring the element is horizontally centered within its container. */
-}
 @keyframes slideinleft {
   0%,
   100% {
@@ -219,14 +207,13 @@
   }
 }
 
-@keyframes typing {
-  /* Didn't use this? */
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.plan-your-next-journey {
+  animation: slideinleft ease-in-out 3s normal; /* Adjust the duration */
+  /* ease-in-out：Control the speed of animation changes，
+  change slowly both at the beginning and at the end. */
+  margin: 0 auto;
+  /* 0: indicating zero margins on all sides
+  auto: ensuring the element is horizontally centered within its coverer. */
 }
 
 @keyframes blink {
@@ -241,4 +228,45 @@
 
 .where-every-adventure-begins {
   animation: blink 3s 1 normal; /* Adjust the duration */
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+  .explore-without-log-in {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .plan-your-next-journey {
+    font-size: 2rem;
+  }
+
+  .explore-without-log-in {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .get-started {
+    font-size: 2rem;
+  }
+
+  .explore-without-log-in {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .explore-without-log-in,
+  .copyright-2023-trapple-position {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .explore-without-log-in,
+  .copyright-2023-trapple-position {
+    font-size: 2.8rem;
+  }
 }

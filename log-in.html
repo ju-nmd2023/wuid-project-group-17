@@ -1,101 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <title>LogIn</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="css/log-in.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div class="background-login">
-      <div class="desktop-log-in">
-        <div class="group-log-in"></div>
-        <div class="log-in">LOG IN</div>
-        <div class="containing-block">
-          <div class="group-position">
-            <div class="group-size">
-              <div class="rectangle-button-social-media"></div>
-            </div>
-          </div>
-          <div class="width-height-position">
-            <div class="rectangle-button-login"></div>
-            <div class="login-socmedia">Log in with social media</div>
-            <div class="log-in2">Log in</div>
-            <a href="log-in.html" class="log-in2" >Log In
-          </div> 
-          <!-- two log in here? -->
-        </div>
-        <div class="width-height">
-          <div class="group-no-account">
-            <div class="no-account">
-              Don't have an account yet? Sign Up
-              <a href="sign-up.html" class="no-account">Don&#039;t have an account yet? Sign Up</a>
-              <!-- two sign up here? -->
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <!-- for picture -->
+      <div class="box1"></div>
 
-        <div class="group-entire-viewport">
-          <div class="trapple-picture-size">
-            <div class="name-e-mail">Name/E-mail</div>
-          </div>
-          <div class="document-flow">
-            <div class="password">Password</div>
-          </div>
-         
-          
-          <div class="remember-passwords">Remember Passwords</div>
-          <div class="rectangle-mini"></div>
-          <div class="line-4"></div>
-          <div class="line-5"></div>
-        </div>
-      </div>
-      <div class="desktop-log-in">
-        <div class="group-log-in"></div>
-        <div class="log-in">LOG IN</div>
-        <div class="containing-block">
-          <div class="group-position">
-            <div class="group-top">
-              <div class="rectangle-picture-layout"></div>
-            </div>
-          </div>
-          <div class="width-height">
-            <div class="group-size">
-              <div class="rectangle-button-social-media"></div>
-            </div>
-          </div>
-          <div class="width-height-position">
-            <div class="rectangle-button-login1"></div>
+      <div class="box2">
+        <h1 class="title">LOG IN</h1>
 
-            <div class="login-socmedia">Log in with social media</div>
-           
-            <a href="index.html" class="log-in2">Log In</a>
+        <!-- from -->
+        <form class="form-container">
+          <div class="form-item">
+            <label for="fname">Name/E-mail</label>
+            <input class="input-info" type="text" />
           </div>
-        </div>
-        
-        <div class="group-inset">
-         
-          <a href="sign-up.html" class="no-account">  Don&#039;t have an account yet? Sign Up</a>
-             
-          </div>
-        </div>
-      
-        <div class="group-entire-viewport">
-          <div class="trapple-picture-size">
-            <div class="name-e-mail">Name/E-mail</div>
-          </div>
-          <div class="document-flow">
-            <div class="password">Password</div>
-          </div>
-      
-          <a href="retrieve-password.html" class="forgot-password">Forgot Password</a>
 
-          <div class="remember-passwords">Remember Passwords</div>
-          <div class="rectangle-mini"></div>
-          <div class="line-login"></div>
-          <div class="line-login1"></div>
-          <img class="img-boat" src="./assets/images/login-page.jpeg" />
-          <!-- wirte the same code twice? -->
-        </div>
+          <div class="form-item">
+            <label for="lname">Password</label>
+            <input class="input-info" type="text" />
+          </div>
+
+          <!-- forget password -->
+          <div class="save-container">
+            <label>
+              <input type="checkbox" name="save" value="yes" />
+              Remember Passwords
+            </label>
+
+            <a href="retrieve-password.html">
+              <p class="forget-password">Forget Password</p>
+            </a>
+          </div>
+
+          <!-- button -->
+          <div class="form-item">
+            <button class="log-in-with-social-media">
+              Log in with social media
+            </button>
+
+            <a href="index.html">
+              <button>Log in</button>
+            </a>
+          </div>
+
+          <!-- sign up -->
+          <div class="sign-up-container">
+            <p>Don't have an account yet?</p>
+
+            <a href="sign-up.html" class="sign-up-link">
+              <p>Sign Up</p>
+            </a>
+          </div>
+        </form>
       </div>
     </div>
   </body>
