@@ -107,6 +107,12 @@ form {
   font-weight: 400;
 }
 
+.forget-password-link{
+  text-decoration: underline;
+  color: #000;
+
+}
+
 button {
   width: 100%;
   padding: 8px;
