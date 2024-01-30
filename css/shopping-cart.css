@@ -47,6 +47,7 @@ a {
   background: #16507a;
   border-color: #16507a;
   border: none;
+  cursor: pointer;
 }
 
 .sign-up-button {
@@ -57,7 +58,12 @@ a {
 .log-in-button {
   margin-right: 4.38rem;
 }
-
+.sign-up-button:hover,
+.log-in-button:hover {
+  background: #123456;
+  border-color: #123456;
+  color: #fff;
+}
 .sign-up-button-link {
   margin-left: 0;
 }
@@ -859,10 +865,10 @@ a {
 
 @media screen and (max-width: 469px) {
   .Check-out-bar-container {
-    width: 25rem;
     height: 8rem;
     margin-left: 4rem;
     margin-top: 2rem;
+    max-width: 80%;
   }
 
   .txt-Check-out-price {
@@ -890,10 +896,10 @@ a {
 
 @media screen and (min-width: 470) and (max-width: 552px) {
   .Check-out-bar-container {
-    width: 25rem;
     height: 8rem;
     margin-left: rem;
     margin-top: 2rem;
+    max-width: 80%;
   }
 
   .txt-Check-out-price {
@@ -921,10 +927,10 @@ a {
 
 @media screen and (min-width: 553px) and (max-width: 729px) {
   .Check-out-bar-container {
-    width: 30rem;
     height: 8rem;
     margin-left: 4rem;
     margin-top: 2rem;
+    max-width: 80%;
   }
 
   .txt-Check-out-price {
@@ -952,9 +958,9 @@ a {
 
 @media screen and (min-width: 730px) and (max-width: 799px) {
   .Check-out-bar-container {
-    width: 36rem;
     height: 10.5rem;
     margin-left: 7rem;
+    max-width: 80%;
   }
 
   .txt-Check-out-price {
@@ -982,9 +988,9 @@ a {
 
 @media screen and (min-width: 800px) and (max-width: 949px) {
   .Check-out-bar-container {
-    width: 45rem;
     height: 10.5rem;
     margin-left: 7rem;
+    max-width: 80%;
   }
 
   .txt-Check-out-price {
@@ -1012,9 +1018,9 @@ a {
 
 @media screen and (min-width: 950px) and (max-width: 1100px) {
   .Check-out-bar-container {
-    width: 53rem;
     height: 10.5rem;
     margin-left: 9rem;
+    max-width: 80%;
   }
 
   .txt-Check-out-price {
@@ -1043,16 +1049,17 @@ a {
 @media screen and (min-width: 1101px) and (max-width: 1366px) {
   .Check-out-bar-container {
     margin-left: 10.5rem;
+    max-width: 80%;
   }
 }
 
 /* REORDER BAR */
-.Reorder-bar-container {
+.reorder-bar-container {
   display: flex;
   margin-bottom: 8.16rem;
 }
 
-.Cancel-button {
+.cancel-button {
   color: #000;
   text-align: center;
   font-size: 1.5rem;
@@ -1077,7 +1084,7 @@ a {
 }
 
 @media screen and (max-width: 599px) {
-  .Reorder-bar-container {
+  .reorder-bar-container {
     margin-left: -30rem;
   }
 
@@ -1095,7 +1102,7 @@ a {
 }
 
 @media screen and (min-width: 600px) and (max-width: 729px) {
-  .Reorder-bar-container {
+  .reorder-bar-container {
     margin-left: -28rem;
   }
 
@@ -1105,37 +1112,37 @@ a {
 }
 
 @media screen and (min-width: 730px) and (max-width: 799px) {
-  .Reorder-bar-container {
+  .reorder-bar-container {
     margin-left: -25rem;
   }
 
-  .reorder-button{
+  .reorder-button {
     margin-left: 7rem;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 949px) {
-  .Reorder-bar-container {
+  .reorder-bar-container {
     margin-left: -25rem;
   }
 
-  .reorder-button{
+  .reorder-button {
     margin-left: 10rem;
   }
 }
 
 @media screen and (min-width: 950px) and (max-width: 979px) {
-  .Reorder-bar-container {
+  .reorder-bar-container {
     margin-left: -20rem;
   }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1200px) {
-  .Reorder-bar-container {
+  .reorder-bar-container {
     margin-left: -15rem;
   }
 
-  .reorder-button{
+  .reorder-button {
     margin-left: 10rem;
   }
 }

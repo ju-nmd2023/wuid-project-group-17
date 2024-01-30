@@ -66,8 +66,14 @@ a {
   border-radius: 0.625rem;
   background: #16507a;
   border: none;
+  cursor: pointer;
 }
-
+.sign-up-button:hover,
+.log-in-button:hover {
+  background: #123456;
+  border-color: #123456;
+  color: #fff;
+}
 .sign-up-button {
   margin-left: 10.19rem;
   margin-right: 1rem;
@@ -259,7 +265,6 @@ input {
   font-size: 1.375rem;
   font-weight: 700;
   border: none;
-  /* padding: 1.8rem 1.7rem 2rem 1.5rem; */
 }
 
 @media screen and (max-width: 1101px) {

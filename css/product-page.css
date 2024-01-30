@@ -136,7 +136,12 @@ equal to the <html> element in an HTML document. Global CSS variables are define
   left: 90%;
   transform: translateX(-50%);
 }
-
+.sign-up-wrapper:hover,
+.log-in-wrapper:hover {
+  background: #123456;
+  border-color: #123456;
+  color: #fff;
+}
 .sign-up,
 .log-in {
   border: none;
