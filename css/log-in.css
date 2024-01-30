@@ -113,7 +113,7 @@ form {
 
 .forget-password-link {
   text-decoration: underline;
-  color: white;
+  color: black;
 }
 
 button {
@@ -223,7 +223,9 @@ button {
     font-weight: 700px;
     margin-top: 0.5rem;
   }
-
+  .forget-password-link {
+    color: white;
+  }
   .sign-up-container {
     color: white;
     margin-top: 1.5rem;
