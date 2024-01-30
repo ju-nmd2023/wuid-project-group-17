@@ -30,7 +30,7 @@
 }
 
 .input-info {
-  color: white;
+  color: black;
 }
 
 .title {
@@ -192,6 +192,9 @@ button {
   input {
     color: black;
     background-color: transparent;
+  }
+  .input-info {
+    color: white;
   }
 
   label {
