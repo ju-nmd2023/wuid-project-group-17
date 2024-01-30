@@ -29,6 +29,10 @@
   margin-left: 2%;
 }
 
+.input-info {
+  color: white;
+}
+
 .title {
   align-self: center;
   position: relative;
@@ -107,10 +111,9 @@ form {
   font-weight: 400;
 }
 
-.forget-password-link{
+.forget-password-link {
   text-decoration: underline;
-  color: #000;
-
+  color: white;
 }
 
 button {
@@ -124,6 +127,7 @@ button {
   font-weight: 500;
   border-radius: 0.625rem;
   border: 5px solid #0d374f;
+  cursor: pointer;
 }
 
 .log-in-with-social-media {
